@@ -1,22 +1,21 @@
-buildscript{
-    ext{
+buildscript {
+    ext {
         springBootVersion = '2.1.7.RELEASE'
     }
-    repositories{
-        mavenCentral ()
+    repositories {
+        mavenCentral()
         jcenter()
     }
-    dependencies{
+    dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
-
-
 }
 
-apply plugin : 'java'
-apply plugin : 'eclipse'
-apply plugin : 'org.springframework.boot'
-apply plugin : 'io.spring.dependency-management'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
 
 group 'com.jojoldu.book'
 version '1.0-SNAPSHOT'
@@ -29,5 +28,4 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
-
 }
